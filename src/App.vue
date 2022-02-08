@@ -3,7 +3,7 @@
     <Header/>
     <Content/>
     <Jumbotron/>
-    <footer></footer>
+    <Footer/>
 
   </div>
 </template>
@@ -12,6 +12,7 @@
 import Header from './components/Header.vue';
 import Content from './components/Content.vue';
 import Jumbotron from './components/Jumbotron.vue';
+import Footer from './components/Footer.vue';
 
 
 export default {
@@ -20,6 +21,7 @@ export default {
     Header,
     Content,
     Jumbotron,
+    Footer,
     
   }
 }
