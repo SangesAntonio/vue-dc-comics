@@ -32,8 +32,7 @@ export default {
 
 body{
   min-width: 100vh;
-  width: 70%;
-  margin: 0 auto;
+
 }
 
 .container{

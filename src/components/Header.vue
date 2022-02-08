@@ -1,6 +1,6 @@
 <template>
   <header class="">
-      <nav class="navbar">
+      <nav class="navbar container">
         <div class="left-nav">
           <a href="#">
             <img src="../assets/img/dc-logo.png" alt="">
@@ -48,7 +48,7 @@ nav ul li a{
   text-decoration: none;
   color: rgb(56, 56, 56);
   margin: 0px 20px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
