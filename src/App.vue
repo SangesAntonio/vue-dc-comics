@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <main></main>
+    <Content/>
     <section></section>
     <footer></footer>
 
@@ -10,12 +10,14 @@
 
 <script>
 import Header from './components/Header.vue';
+import Content from './components/Content.vue';
 
 
 export default {
   name: 'App',
   components: {
     Header,
+    Content,
     
   }
 }

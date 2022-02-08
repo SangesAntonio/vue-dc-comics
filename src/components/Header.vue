@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-      <nav>
+  <header class="">
+      <nav class="navbar">
         <div class="left-nav">
           <a href="#">
             <img src="../assets/img/dc-logo.png" alt="">
@@ -22,9 +22,7 @@
           
         </div>
       </nav>
-
-      
-  </div>
+  </header>
 </template>
 
 <script>
@@ -33,7 +31,38 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+header{
+  height: 140px;
+}
+.navbar{
+  padding-top: 30px;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  margin: 0px 20px;
+  font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+.right-nav{
+  display: flex;
+  align-items: center;
+  width: calc(100 / 2);
+}
+
+
 
 
 </style>
