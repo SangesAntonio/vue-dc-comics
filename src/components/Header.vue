@@ -34,9 +34,9 @@ export default {
 <style scoped>
 header{
   height: 140px;
+  padding: 30px 0;
 }
 .navbar{
-  padding-top: 30px;
   display: flex;
   background-color: white;
   justify-content: space-between;
@@ -49,7 +49,7 @@ nav ul li a{
   color: rgb(56, 56, 56);
   margin: 0px 20px;
   font-size: 0.7rem;
-  font-family: 'Lato', sans-serif;
+  
   font-weight: bold;
 }
 nav ul {

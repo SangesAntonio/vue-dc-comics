@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Content/>
-    <section></section>
+    <Jumbotron/>
     <footer></footer>
 
   </div>
@@ -11,6 +11,7 @@
 <script>
 import Header from './components/Header.vue';
 import Content from './components/Content.vue';
+import Jumbotron from './components/Jumbotron.vue';
 
 
 export default {
@@ -18,6 +19,7 @@ export default {
   components: {
     Header,
     Content,
+    Jumbotron,
     
   }
 }
@@ -30,8 +32,14 @@ export default {
   box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 body{
   min-width: 100vh;
+  font-family: 'Lato', sans-serif;
 
 }
 
