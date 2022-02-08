@@ -12,14 +12,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 main{
     background-color: #1C1C1C;
-}
-.main-section{
-    height: 140px;
-    display: flex;
-    align-items: center;
-    color: white;
+
+    .main-section{
+        height: 140px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
 }
 </style>

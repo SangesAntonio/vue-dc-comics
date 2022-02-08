@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header{
   height: 140px;
   padding: 30px 0;
@@ -44,6 +44,7 @@ header{
 nav ul li{
   list-style-type: none;
 }
+
 nav ul li a{
   text-decoration: none;
   color: rgb(56, 56, 56);
