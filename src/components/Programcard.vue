@@ -1,13 +1,11 @@
 <template>
-  <div>
     <div class="card">
-      
+      <figure>
+
         <img :src="program.thumb" alt="">
-      
+      </figure>
       <p>{{program.series}}</p>
     </div>
-      
-  </div>
 </template>
 
 <script>
@@ -20,16 +18,23 @@ export default {
 
 <style scoped lang="scss">
 .card{
-  flex-basis: calc(100% / 6);
-  padding: 15px;
+  width: calc(100% / 6);
   color: white;
   margin-bottom: 30px;
+  padding: 15px;
+  overflow: hidden;
     
-  .img{
-    object-fit: cover;
+  figure{
     width: 170px;
     height: 170px;
     
+    img{
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      object-position: top left;
+
+    }
 
   }
   
