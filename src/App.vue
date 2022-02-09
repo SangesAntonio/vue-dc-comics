@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header  :links="links"/>
     <Content/>
     <Jumbotron/>
     <Footer/>
@@ -22,9 +22,24 @@ export default {
     Content,
     Jumbotron,
     Footer,
-    
-  }
-}
+  },
+  data(){
+    return{
+      links:[
+        {text:'CHARACTERS', url:'#'},
+        {text:'COMICS', url:'#'},
+        {text:'MOVIES', url:'#'},
+        {text:'TV', url:'#'},
+        {text:'GAMES', url:'#'},
+        {text:'COLLECTIBLES', url:'#'},
+        {text:'VIDEOS', url:'#'},
+        {text:'FANS', url:'#'},
+        {text:'NEWS', url:'#'},
+        {text:'SHOP', url:'#'},
+      ]
+    };
+  },
+};
 </script>
 
 <style lang="scss">

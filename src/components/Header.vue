@@ -8,26 +8,24 @@
         </div>
         <div class="right-nav">
           <ul>
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
+            <HeaderNav v-for= "(link, index) in links" 
+            :key="index"
+            :link="link"/>
           </ul>
-          
         </div>
       </nav>
   </header>
 </template>
 
 <script>
+import HeaderNav from './HeaderNav.vue'
 export default {
   name: 'Header',
+  components:{
+    HeaderNav,
+  },
+  props: ['links'],
+  
 }
 </script>
 
@@ -41,29 +39,4 @@ header{
   background-color: white;
   justify-content: space-between;
 }
-nav ul li{
-  list-style-type: none;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: rgb(56, 56, 56);
-  margin: 0px 20px;
-  font-size: 0.7rem;
-  
-  font-weight: bold;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-.right-nav{
-  display: flex;
-  align-items: center;
-  width: calc(100 / 2);
-}
-
-
-
-
 </style>
