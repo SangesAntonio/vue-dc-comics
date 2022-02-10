@@ -34,7 +34,7 @@ main{
     background-color: #1C1C1C;
 
     .cartoon-section{
-        height: 550px;
+        height: 500px;
         background-image: url(../assets/img/jumbotron.jpg);
         color: white;
         position: relative;
